@@ -1,0 +1,232 @@
+img {
+    max-width: 100%;
+}
+section {
+    margin: 50px 0;
+}
+* {
+    font-family: 'Play', sans-serif;
+}
+.list-styled-none {
+    list-style: none;
+}
+.headLine {
+    font-size: 32px;
+    font-weight: 700;
+}
+.headLine-40 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.bg-darkBlue {
+    background: #171f5e;
+    width: 100%;
+    height: auto;
+}
+.darkBlue {
+    color: #171f5e;
+}
+.lightDarkBlue {
+    color: #2516C7;
+}
+.royalColor {
+    color: #e8b730;
+}
+.subheadLine {
+    font-size: 26;
+    font-weight: 400;
+}
+.star {
+    font-size: 16px;
+    position: relative;
+    padding: 0 0 0 25px;
+    font-weight: 800;
+}
+.btn-orange {
+    color: #fff;
+    padding: 10px 20px;
+    background: #f2430d;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-green {
+    color: #fff;
+    padding: 10px 20px;
+    background: #16c72e;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.star::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%201536%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(11%2C%20104%2C%20230%2C%201)%22%3E%20%3Cpath%20d%3D%22M773%201319v127q-1%20292-6%20305-12%2032-51%2040-54%209-181.5-38T372%201664q-13-15-17-36-1-12%204-26%204-10%2034-47t181-216q1%200%2060-70%2015-19%2039.5-24.5t49.5%203.5q24%2010%2037.5%2029t12.5%2042zm-149-251q-3%2055-52%2070l-120%2039q-275%2088-292%2088-35-2-54-36-12-25-17-75-8-76%201-166.5T120%20863t56-32q13%200%20202%2077%2070%2029%20115%2047l84%2034q23%209%2035.5%2030.5T624%201068zm826%20297q-7%2054-91.5%20161T1223%201653q-37%2014-63-7-14-10-184-287l-47-77q-14-21-11.5-46t19.5-46q35-43%2083-26%201%201%20119%2040%20203%2066%20242%2079.5t47%2020.5q28%2022%2022%2061zM778%20733q5%20102-54%20122-58%2017-114-71L232%20186q-8-35%2019-62%2041-43%20207.5-89.5T683%203q40%2010%2049%2045%203%2018%2022%20305.5T778%20733zm662%20108q3%2039-26%2059-15%2010-329%2086-67%2015-91%2023l1-2q-23%206-46-4t-37-32q-30-47%200-87%201-1%2075-102%20125-171%20150-204t34-39q28-19%2065-2%2048%2023%20123%20133.5t81%20167.5v3z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E") no-repeat;
+    top: 0;
+    left: 0;
+}
+header .navbar {
+    background: #05224a;
+}
+header .logo {
+    width: 15%;
+    height: 15%;
+}
+header .navbar .menu ul li {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+header .navbar .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+header .navbar .menu ul li.phone-number {
+    background: #16c72e;
+    border-radius: 50px;
+    padding: 10px 16px;
+    font-size: 16px;
+}
+#indexPage .intro .carousel-item img {
+    height: 100%;
+}
+#indexPage .intro .carousel {
+    padding-bottom: 20px;
+}
+#indexPage .intro-content .content h3 {
+    font-size: 26px;
+    color: #2516C7;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#indexPage .user-form {
+    background: linear-gradient(180deg, rgba(242, 67, 13, 1), rgba(232, 140, 48, 1));
+    width: 100%;
+    height: auto;
+}
+#indexPage .user-form ul li {
+    padding: 0 30px;
+}
+#indexPage .user-form ul li input {
+    border-radius: 50px;
+    border: none;
+    padding: 5px 50px;
+}
+#indexPage .user-form ul li a {
+    border-radius: 50px;
+    border: none;
+    background: #16c72e;
+    padding: 7px 70px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+#indexPage .user-form p {
+    font-size: 12px;
+}
+#indexPage .ocean-resident .content h3 {
+    font-size: 26px;
+    color: #e8b730;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#indexPage .hospital {
+    background: #171f5e;
+}
+#indexPage .hospital .content h3 {
+    font-size: 26px;
+    color: #e8b730;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#indexPage .hospital .content ul li {
+    font-size: 16px;
+    position: relative;
+    padding: 0 0 0 25px;
+}
+#indexPage .hospital .content ul li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%201536%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(11%2C%20104%2C%20230%2C%201)%22%3E%20%3Cpath%20d%3D%22M773%201319v127q-1%20292-6%20305-12%2032-51%2040-54%209-181.5-38T372%201664q-13-15-17-36-1-12%204-26%204-10%2034-47t181-216q1%200%2060-70%2015-19%2039.5-24.5t49.5%203.5q24%2010%2037.5%2029t12.5%2042zm-149-251q-3%2055-52%2070l-120%2039q-275%2088-292%2088-35-2-54-36-12-25-17-75-8-76%201-166.5T120%20863t56-32q13%200%20202%2077%2070%2029%20115%2047l84%2034q23%209%2035.5%2030.5T624%201068zm826%20297q-7%2054-91.5%20161T1223%201653q-37%2014-63-7-14-10-184-287l-47-77q-14-21-11.5-46t19.5-46q35-43%2083-26%201%201%20119%2040%20203%2066%20242%2079.5t47%2020.5q28%2022%2022%2061zM778%20733q5%20102-54%20122-58%2017-114-71L232%20186q-8-35%2019-62%2041-43%20207.5-89.5T683%203q40%2010%2049%2045%203%2018%2022%20305.5T778%20733zm662%20108q3%2039-26%2059-15%2010-329%2086-67%2015-91%2023l1-2q-23%206-46-4t-37-32q-30-47%200-87%201-1%2075-102%20125-171%20150-204t34-39q28-19%2065-2%2048%2023%20123%20133.5t81%20167.5v3z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E") no-repeat;
+    top: 0;
+    left: 0;
+}
+#indexPage .florida {
+    background: url("img/florida-background.jpg") no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+#indexPage .florida::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+#indexPage .florida h2 {
+    font-size: 40px;
+}
+#indexPage .florida h3 {
+    font-size: 26px;
+}
+#indexPage .florida .input-box {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(180deg, rgba(242, 67, 13, 1), rgb(240, 255, 37));
+    padding: 40px 0 100px 0;
+}
+#indexPage .user-form-florida ul li {
+    padding: 10px 30px;
+}
+#indexPage .user-form-florida ul li input {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 70px;
+}
+#indexPage .user-form-florida ul li a {
+    border-radius: 50px;
+    border: none;
+    background: #16c72e;
+    padding: 10px 100px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+#indexPage .user-form-florida p {
+    font-size: 12px;
+}
+#indexPage .call {
+    background: #f2430d;
+    padding: 15px 35px;
+    display: inline-block;
+}
+#indexPage .feedback .album-feedback {
+    margin-top: 50px;
+}
+#indexPage .overview .features ul li {
+    border-bottom: 1px solid black;
+}
+#indexPage .advantages a {
+    margin: 30px 15px;
+}
+#indexPage .advantages .item img {
+    width: 80px;
+    height: 80px;
+}
+#indexPage .advantages p {
+    max-width: 100%;
+    padding-left: 10px;
+}
+#indexPage .advantages .item {
+    display: flex;
+    align-items: center;
+}
