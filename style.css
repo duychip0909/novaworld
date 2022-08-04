@@ -10,6 +10,16 @@ section {
 .list-styled-none {
     list-style: none;
 }
+header .navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+header {
+    margin-bottom: 80px;
+}
 .headLine {
     font-size: 32px;
     font-weight: 700;
@@ -97,6 +107,9 @@ section {
     background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%201536%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(11%2C%20104%2C%20230%2C%201)%22%3E%20%3Cpath%20d%3D%22M773%201319v127q-1%20292-6%20305-12%2032-51%2040-54%209-181.5-38T372%201664q-13-15-17-36-1-12%204-26%204-10%2034-47t181-216q1%200%2060-70%2015-19%2039.5-24.5t49.5%203.5q24%2010%2037.5%2029t12.5%2042zm-149-251q-3%2055-52%2070l-120%2039q-275%2088-292%2088-35-2-54-36-12-25-17-75-8-76%201-166.5T120%20863t56-32q13%200%20202%2077%2070%2029%20115%2047l84%2034q23%209%2035.5%2030.5T624%201068zm826%20297q-7%2054-91.5%20161T1223%201653q-37%2014-63-7-14-10-184-287l-47-77q-14-21-11.5-46t19.5-46q35-43%2083-26%201%201%20119%2040%20203%2066%20242%2079.5t47%2020.5q28%2022%2022%2061zM778%20733q5%20102-54%20122-58%2017-114-71L232%20186q-8-35%2019-62%2041-43%20207.5-89.5T683%203q40%2010%2049%2045%203%2018%2022%20305.5T778%20733zm662%20108q3%2039-26%2059-15%2010-329%2086-67%2015-91%2023l1-2q-23%206-46-4t-37-32q-30-47%200-87%201-1%2075-102%20125-171%20150-204t34-39q28-19%2065-2%2048%2023%20123%20133.5t81%20167.5v3z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E") no-repeat;
     top: 0;
     left: 0;
+}
+section.intro {
+    margin: 10px 0;
 }
 header .navbar {
     background: #05224a;
@@ -195,17 +208,14 @@ header .navbar .menu ul li.phone-number {
 #indexPage .florida {
     background: url("img/florida-background.jpg") no-repeat center center / cover;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 }
-#indexPage .florida::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+#indexPage .florida h2 {
+    font-size: 40;
+    font-weight: bold;
 }
 #indexPage .florida h2 {
     font-size: 40px;
@@ -214,10 +224,11 @@ header .navbar .menu ul li.phone-number {
     font-size: 26px;
 }
 #indexPage .input-box {
+    display: inline-block;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background: linear-gradient(180deg, rgba(242, 67, 13, 1), rgb(240, 255, 37));
-    padding: 40px 0 100px 0;
+    padding: 40px 20px 100px;
 }
 #indexPage .user-form-florida ul li {
     padding: 10px 30px;
@@ -354,6 +365,42 @@ header .navbar .menu ul li.phone-number {
   }
 
   .real-img-sec .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .real-img-sec .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+ .intro .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .intro .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .intro .swiper {
     margin-left: auto;
     margin-right: auto;
   }
@@ -572,4 +619,32 @@ header .navbar .menu ul li.phone-number {
 }
 .real-img-sec img {
     padding: 10px 0;
+}
+footer {
+    background: url(img/footer-beach.jpg) no-repeat center center / cover;
+    background-color: #051f4fe6;
+}
+footer .headLine-white {
+    font-size: 18px;
+}
+footer ul {
+    padding: 10px 0;
+}
+.blueBackground {
+    background: #0a67e9;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 10px;
+}
+footer .last-line::before  {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 800px;
+    height: 1px;
+    background: #fff;
 }
