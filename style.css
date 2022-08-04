@@ -7,15 +7,25 @@ section {
 * {
     font-family: 'Play', sans-serif;
 }
-header .navbar {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    width: 100%;
-    z-index: 3;
+.navbar .navbar-toggler.collapse,.navbar .navbar-toggler, .navbar .navbar-toggler.collapsed {
+    border: none!important;
+    color: rgba(255, 255, 255, 0)!important;
 }
-header {
-    margin-bottom: 80px;
+.header-bg {
+    background: #05224a;
+}
+footer {
+    overflow: hidden;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-link:hover {
+    color: #fff!important;
 }
 .headLine {
     font-size: 32px;
@@ -92,22 +102,6 @@ header {
 section.intro {
     margin: 10px 0;
 }
-header .navbar {
-    background: #05224a;
-}
-header .logo {
-    width: 15%;
-    height: 15%;
-}
-header .navbar .menu ul li {
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 14px;
-}
-header .navbar .menu ul li a {
-    text-decoration: none;
-    color: #fff;
-}
 #indexPage .intro .carousel-item img {
     height: 100%;
 }
@@ -183,12 +177,10 @@ header .navbar .menu ul li a {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
-#indexPage .advantages-ex .advan {
-    padding: 30px 100px;
-}
 .selling-estate-bg {
     background: #16c72e;
     width: 100%;
+    overflow: hidden;
 }
 /* SWIPER SLIDE */
 .selling-estate .swiper {
@@ -381,6 +373,20 @@ header .navbar .menu ul li a {
     background-attachment: fixed;
     height: auto;
 }
+.policies .flower-inner {
+    width: 50px;
+}
+.policies .flower-inner img {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+}
+.policies ul.voucher > li:nth-child(even) {
+    padding-bottom: 10px;
+}
+.policies ul.member li {
+    padding: 10px 0;
+}
 .policies .price-list, .policies .policy {
     background: #fff;
     position: relative;
@@ -503,6 +509,9 @@ footer .last-line::before  {
 @media (max-width: 996px) {
     .diversity .product .info ul li {
         font-size: 13px;
+    }
+    header {
+        margin-bottom: 0;
     }
     .policies ul {
         padding: 10px 0 0 45px;
